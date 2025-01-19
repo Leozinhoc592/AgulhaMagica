@@ -1,0 +1,147 @@
+/* Resetando margens e padding padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo do site */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #e69494;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Formulário no topo */
+.container-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 400px;
+}
+
+.container-topo form {
+    display: flex;
+    gap: 10px;
+}
+
+.menu-direito {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 16px;
+}
+
+/* Container principal */
+.main-container {
+    display: flex;
+    flex-grow: 1;
+    height: 100vh;
+}
+
+/* Menu lateral */
+.container-esquerda {
+    width: 250px;
+    background-color: #cbec50;
+    padding: 20px;
+    flex-shrink: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu.lateral {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.menu.lateral li {
+    margin: 10px 0;
+}
+
+.container-esquerda h4 {
+    margin-top: 20px;
+}
+
+/* Conteúdo à direita */
+.container-direita {
+    flex-grow: 1;
+    margin-left: 250px;
+    background-color: #d17575;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Bloco inicial */
+.Bloco-Inicial {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container-botoes {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.conteudo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.conteudo img {
+    max-width: 40%;
+    border-radius: 10px;
+}
+
+.bloco-teste {
+    flex-grow: 1;
+    background-color: #ff5757;
+    padding: 53px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: justify;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container-topo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-direito {
+        font-size: 14px;
+    }
+
+    .container-esquerda {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .container-direita {
+        margin-left: 0;
+    }
+
+    .conteudo {
+        flex-direction: column;
+    }
+
+    .conteudo img {
+        max-width: 100%;
+    }
+}

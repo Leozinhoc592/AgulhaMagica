@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+
+/* Certifique-se de que o header ocupa a largura completa */
+.header {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: space-between; /* Espaçamento horizontal entre o logo e o menu */
+    width: 100%; /* Certifique-se de que ocupe toda a largura */
+}
+
+.logo {
+    max-height: 150px; /* Ajuste para manter o tamanho proporcional */
+}
+
+.menu {
+    display: flex;
+    gap: 20px; /* Espaçamento entre itens do menu */
+    margin-left: 20px; /* Se necessário, adicione margem para separar do logo */
+}
+
+
+.container-topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+.container-topo form {
+    padding: 20px;
+    margin: 0 auto 20px 300px;
+    background-color: burlywood;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+
+.container-esquerda {
+    width: 250px;
+    background-color: #cbec50;
+    padding: 20px;
+    flex-shrink: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+.menu.lateral, .menu.lateral2 {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu.lateral li, .menu.lateral2 li {
+    margin: 10px 0;
+}
+
+.container-direita {
+    flex-grow: 1;
+    background-color: #d17575;
+    padding: 20px;
+    min-height: calc(100vh - 60px); 
+    overflow-y: auto;
+    margin-left: 250px;
+}
+
+
+.container-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.container-direita button {
+    padding: 5px 10px;
+    margin: 0;
+}
+
+
+.logo {
+    width: 100%;
+    height: auto; 
+    margin-top: 6px;
+}
+
+
+.card {
+    margin: 10px;
+    width: 30%;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+}
+
+.card-body {
+    flex-grow: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.card-deck {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.col-9 {
+    flex-basis: 0;   
+    flex-grow: 1;
+    max-width: 100%;
+    padding-left: 210px;    
+}
+@media (max-width: 1300px) {
+    .card-deck {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px 0;
+    }
+}

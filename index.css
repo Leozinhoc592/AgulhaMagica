@@ -1,199 +1,211 @@
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    body {
-        font-family: Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        
-    }
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F4F4F9; /* Bege claro como cor de fundo geral */
+}
 
-    /* Menu Abaixo do logo */
-    .nav-pills {
-        margin-left: 40px;
-    }
+/* Menu Abaixo do logo */
+.nav-pills {
+    margin-left: 30px;
+}
 
-    .nav-pills .nav-link {
-        padding-left: 10px; 
-        color: #3D3D3D; /* Cinza escuro para texto */
-        font-weight: 500;
-    }
+.nav-pills .nav-link {
+    padding-left: 10px; 
+    color: #3C4858; /* Azul-acinzentado */
+    font-weight: 500;
+}
 
-    .nav-pills .nav-link.active {
-        background-color: #A4A1A9; /* Cinza escuro suave para ativo */
-    }
+.nav-pills .nav-link.active {
+    background-color: #B6C7E3; /* Azul pastel com leve saturação */
+}
 
-    /* Topo */
-    .container-topo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #8A7F8D; /* Roxo suave */
-        padding: 10px;
-    }
+/* Topo */
+.container-topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DEE3F4; /* Azul suave */
+    padding: 10px;
+}
 
-    .container-topo form {
-        padding: 20px;
-        margin: 0 auto 20px 300px;
-        background-color: #A6A0A9; /* Cinza claro para o fundo do form */
-    }
+.container-topo form {
+    padding: 20px;
+    margin: 0 auto 20px 300px;
+    background-color: #E8EAF8; /* Bege azulado claro */
+}
 
-    /* Menu Lateral */
-    .container-esquerda {
-        width: 250px;
-        background-color: #A2A0A4; /* Cinza neutro */
-        padding: 5px;
-        flex-shrink: 0;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-    }
+/* Menu Lateral */
+.container-esquerda {
+    width: 250px;
+    background-color: #D7DFF3; /* Azul claro uniforme */
+    padding: 5px;
+    flex-shrink: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-right: 2px solid #C5CFE5; /* Azul mais escuro para borda */
+}
 
-    .container-direita {
-        flex-grow: 1;
-        background-image: url('BGM/488.jpg'); /* Define a imagem como fundo */
-        background-size: cover; /* Faz a imagem cobrir toda a área */
-        background-position: center; /* Centraliza a imagem */
-        background-repeat: no-repeat; /* Impede a repetição da imagem */
-        padding: 20px;
-        min-height: calc(100vh - 60px); 
-        overflow-y: auto;
-        margin-left: 250px;
-    }
+.container-direita {
+    flex-grow: 1;
+    background-image: url('bgm/488.jpg'); /* Imagem como fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    min-height: calc(100vh - 60px); 
+    overflow-y: auto;
+    margin-left: 250px;
+}
 
+.container-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
 
-    .container-botoes {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        margin-top: 10px;
-    }
+/* Logo do site */
+.logo {
+    width: 100%;
+    height: auto;
+    margin-top: 6px;
+    padding-right: 40px;
+}
 
-    /* Logo do site */
-    .logo {
-        width: 100%;
-        height: auto;
-        margin-top: 6px;
-        padding-right: 40px;
-    }
+/* Cartões */
+.card {
+    margin: 10px;
+    width: 30%;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #BFCBE8; /* Azul claro para borda */
+    border-radius: 10px; /* Bordas arredondadas suaves */
+    overflow: hidden;
+    background-color: #E6EBF5; /* Fundo bege azulado */
+}
 
-    /* Cartões */
-    .card {
-        margin: 10px;
-        width: 30%;
-        min-height: 380px;
-        display: flex;
-        flex-direction: column;
-        border: 1px solid #B1B1B1; /* Borda em cinza médio */
-        border-radius: 5px;
-        overflow: hidden;
-        background-color: #FFFFFF; /* Fundo branco para os cartões */
-    }
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+}
 
-    .card-img-top {
-        width: 100%;
-        height: 200px;
-        object-fit: cover; 
-    }
+.card-body {
+    flex-grow: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F4F9; /* Fundo bege claro */
+}
 
-    .card-body {
-        flex-grow: 1;
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        background-color: #F5F5F5; /* Fundo cinza bem suave */
-    }
+.card-footer {
+    background-color: #B6C7E3; /* Azul pastel saturado */
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #FFFFFF; /* Texto branco */
+}
 
-    .card-footer {
-        background-color: #A4A1A9; /* Cinza suave para o rodapé */
-        padding: 10px;
-        text-align: center;
-        font-size: 0.8rem;
-        color: #FFFFFF; /* Texto branco */
-    }
+.card-deck {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
 
+/* Coluna direita */
+.col-9 {
+    flex-basis: 0;   
+    flex-grow: 1;
+    max-width: 100%;
+    padding-left: 210px;    
+}
+
+@media (max-width: 1300px) {
     .card-deck {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 15px;
+        flex-direction: column;
+        align-items: center;
     }
 
-    /* Coluna direita */
-    .col-9 {
-        flex-basis: 0;   
-        flex-grow: 1;
-        max-width: 100%;
-        padding-left: 210px;    
+    .card {
+        width: 90%;
+        margin: 10px 0;
     }
+}
 
-    @media (max-width: 1300px) {
-        .card-deck {
-            flex-direction: column;
-            align-items: center;
-        }
+/* Textos destacados */
+.texto-sim {
+    background-color: #C5D4F2; /* Azul pastel com leve contraste */
+    text-align: center;
+    color: #3C4858; /* Texto escuro */
+    padding: 10px;
+    border-radius: 5px;
+}
 
-        .card {
-            width: 90%;
-            margin: 10px 0;
-        }
-    }
+/* Fundo branco para o container de abas */
+.fundo {
+    background-color: #F4F4F9; /* Fundo bege claro */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-    /* Textos destacados */
-    .texto-sim {
-        background-color: #A4A1A9; /* Cinza claro para o fundo */
-        text-align: center;
-        color: #FFFFFF; /* Texto branco */
-        padding: 10px;
-        border-radius: 5px;
-    }
+/* Fundo branco para o conteúdo de cada aba */
+.tab-content {
+    background-color: #FFFFFF; /* Fundo branco */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-    /* Fundo branco para o container de abas */
-    .fundo {
-        background-color: #FFFFFF; /* Fundo branco */
-        border-radius: 8px; /* Bordas arredondadas para parecer uma janela */
-        padding: 20px; /* Espaçamento interno */
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve para dar profundidade */
-    }
+/* Espaçamento entre abas e o conteúdo */
+.nav-pills .nav-link {
+    margin-bottom: 10px;
+}
+.nav-pills {
+    background-color: #E6EBF5; /* Bege azulado claro */
+    border-radius: 8px;
+    padding: 30px;
+    padding-right: 134px;
+    padding-left: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-    /* Fundo branco para o conteúdo de cada aba */
-    .tab-content {
-        background-color: #FFFFFF; /* Fundo branco */
-        border-radius: 8px; /* Mesmas bordas arredondadas */
-        padding: 20px; /* Espaçamento interno */
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    }
+/* Estilização dos links do menu */
+.nav-pills .nav-link {
+    color: #3C4858; /* Cinza escuro */
+    font-weight: 500;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 
-    /* Espaçamento entre abas e o conteúdo */
-    .nav-pills .nav-link {
-        margin-bottom: 10px;
-    }
-    .nav-pills {
-        background-color: #faf5f5; /* Fundo branco */
-        border-radius: 8px; /* Bordas arredondadas para um design mais suave */
-        padding: 30px; /* Espaçamento interno para os links */
-        padding-right: 134px;
-        padding-left: 10px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve para profundidade */
-    }
-    
-    /* Estilização dos links do menu */
-    .nav-pills .nav-link {
-        color: #3D3D3D; /* Cor do texto cinza escuro */
-        font-weight: 500; /* Peso da fonte */
-        margin-bottom: 5px; /* Espaçamento entre os links */
-        padding: 10px; /* Espaçamento interno */
-        border-radius: 4px; /* Bordas arredondadas dos links */
-    }
-    
-    /* Estilo para o link ativo */
-    .nav-pills .nav-link.active {
-        background-color: #A4A1A9; /* Fundo cinza suave para o link ativo */
-        color: #FFFFFF; /* Cor do texto do link ativo */
-    }
+.nav-pills .nav-link:hover {   
+    background-color: #C5CFE5; /* Azul claro */
+    color: #3C4858; /* Azul-acinzentado */
+}
+
+/* Estilo para o link ativo */
+.nav-pills .nav-link.active {
+    background-color: #B6C7E3; /* Azul pastel */
+    color: #FFFFFF;
+}
+

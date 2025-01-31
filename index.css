@@ -71,7 +71,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Garante que o conteúdo comece de cima */
+    justify-content: flex-start;
+    background-image: url('bgm/488.jpg');
 }
 
 .carousel {

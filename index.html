@@ -52,9 +52,9 @@
                 <div class="card me-3" style="width: 18rem;">
                     <div class="card-header">Serviços</div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item" id="item-1">Bainha</li>
-                        <li class="list-group-item" id="item-2">Ajustes</li>
-                        <li class="list-group-item" id="item-3">Cerzir & Remendo</li>
+                            <li class="list-group-item" id="item-1">Bainha</li>
+                            <li class="list-group-item" id="item-2">Ajustes</li>
+                            <li class="list-group-item" id="item-3">Cerzir & Remendo</li>
                     </ul>
                 </div>
 
@@ -86,6 +86,15 @@
                     </button>
                 </div>
             </div>
+
+
+<script>
+    function mudarSlide(slideIndex) {
+        let carrossel = new bootstrap.Carousel(document.querySelector('#carouselExampleIndicators'));
+        carrossel.to(slideIndex);
+    }
+</script>
+
 
             <h1 class="texto-sim">Últimos Consertos</h1>
             <div class="container-conteudo">

@@ -9,22 +9,22 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #F4F4F9; /* Bege claro como cor de fundo geral */
+    background-color: #F4F4F9; 
 }
 
-/* Menu Abaixo do logo */
+
 .nav-pills {
     margin-left: 30px;
 }
 
 .nav-pills .nav-link {
     padding-left: 10px; 
-    color: #3C4858; /* Azul-acinzentado */
+    color: #3C4858; 
     font-weight: 500;
 }
 
 .nav-pills .nav-link.active {
-    background-color: #B6C7E3; /* Azul pastel com leve saturação */
+    background-color: #B6C7E3; 
 }
 
 /* Topo */
@@ -32,22 +32,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #DEE3F4; /* Azul suave */
+    background-color: #DEE3F4; 
     padding: 10px;
 }
 
 .container-topo form {
     margin: 0 auto 20px 300px;
-    background-color: #E8EAF8; /* Bege azulado claro */
+    background-color: #E8EAF8; 
     padding: 10px;
     margin: 0 auto;
     max-width: 400px;
 }
 
-/* Menu Lateral */
 .container-esquerda {
     width: 250px;
-    background-color: #D7DFF3; /* Azul claro uniforme */
+    background-color: #D7DFF3;
     padding: 5px;
     flex-shrink: 0;
     height: 100%;
@@ -76,13 +75,13 @@ body {
 }
 
 .carousel {
-    width: 60%; /* Mantém ele menor dentro do container */
-    max-width: 600px; /* Reduz ainda mais o tamanho */
-    height: 150px; /* Altura bem menor */
+    width: 60%;
+    max-width: 600px;
+    height: 150px;
     position: relative;
     padding-bottom: 400px;
-    z-index: 1; /* Mantém ele atrás, caso precise */
-    margin-bottom: 20px; /* Espaço entre a imagem e os cards abaixo */
+    z-index: 1; 
+    margin-bottom: 20px; 
 }
 
 .cards-container {
@@ -108,7 +107,7 @@ body {
     margin-top: 10px;
 }
 
-/* Logo do site */
+
 .logo {
     width: 100%;
     height: auto;
@@ -116,17 +115,17 @@ body {
     padding-right: 40px;
 }
 
-/* Cartões */
+
 .card {
     margin: 10px;
     width: 30%;
     min-height: 380px;
     display: flex;
     flex-direction: column;
-    border: 1px solid #BFCBE8; /* Azul claro para borda */
-    border-radius: 10px; /* Bordas arredondadas suaves */
+    border: 1px solid #BFCBE8; 
+    border-radius: 10px; 
     overflow: hidden;
-    background-color: #E6EBF5; /* Fundo bege azulado */
+    background-color: #E6EBF5; 
 }
 
 .card-img-top {
@@ -140,15 +139,15 @@ body {
     padding: 15px;
     display: flex;
     flex-direction: column;
-    background-color: #F4F4F9; /* Fundo bege claro */
+    background-color: #F4F4F9; 
 }
 
 .card-footer {
-    background-color: #B6C7E3; /* Azul pastel saturado */
+    background-color: #B6C7E3; 
     padding: 10px;
     text-align: center;
     font-size: 0.8rem;
-    color: #FFFFFF; /* Texto branco */
+    color: #FFFFFF; 
 }
 
 .card-deck {
@@ -158,7 +157,6 @@ body {
     gap: 15px;
 }
 
-/* Coluna direita */
 .col-9 {
     flex-basis: 0;   
     flex-grow: 1;
@@ -180,35 +178,35 @@ body {
 
 /* Textos destacados */
 .texto-sim {
-    background-color: #C5D4F2; /* Azul pastel com leve contraste */
+    background-color: #C5D4F2; 
     text-align: center;
-    color: #3C4858; /* Texto escuro */
+    color: #3C4858; 
     padding: 10px;
     border-radius: 5px;
 }
 
-/* Fundo branco para o container de abas */
+
 .fundo {
-    background-color: #F4F4F9; /* Fundo bege claro */
+    background-color: #F4F4F9; 
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Fundo branco para o conteúdo de cada aba */
+
 .tab-content {
-    background-color: #FFFFFF; /* Fundo branco */
+    background-color: #FFFFFF; 
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Espaçamento entre abas e o conteúdo */
+
 .nav-pills .nav-link {
     margin-bottom: 10px;
 }
 .nav-pills {
-    background-color: #E6EBF5; /* Bege azulado claro */
+    background-color: #E6EBF5;
     border-radius: 8px;
     padding: 30px;
     padding-right: 134px;
@@ -216,9 +214,9 @@ body {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilização dos links do menu */
+
 .nav-pills .nav-link {
-    color: #3C4858; /* Cinza escuro */
+    color: #3C4858;
     font-weight: 500;
     margin-bottom: 5px;
     padding: 10px;
@@ -232,16 +230,16 @@ body {
 }
 
 .nav-pills .nav-link:hover {   
-    background-color: #C5CFE5; /* Azul claro */
-    color: #3C4858; /* Azul-acinzentado */
+    background-color: #C5CFE5;
+    color: #3C4858; 
 }
 
-/* Estilo para o link ativo */
+
 .nav-pills .nav-link.active {
-    background-color: #B6C7E3; /* Azul pastel */
+    background-color: #B6C7E3; 
     color: #FFFFFF;
 }
-/* Centraliza o conteúdo principal */
+
 .container {
     display: flex;
     flex-direction: column;
@@ -251,7 +249,7 @@ body {
     padding: 20px;
 }
 
-/* Container do Carousel + Card Destaque */
+
 .carousel-card-container {
     display: flex;
     justify-content: space-between;
@@ -261,18 +259,17 @@ body {
     gap: 20px;
 }
 
-/* Define tamanho do carousel */
 .carousel {
     flex: 1;
     max-width: 600px;
 }
 
-/* Ajuste para o card de destaque */
+
 .destaque-card {
     width: 18rem;
 }
 
-/* Seção dos Cards abaixo */
+
 .cards-container {
     display: flex;
     justify-content: center;
@@ -280,7 +277,7 @@ body {
     margin-top: 20px;
 }
 
-/* Ajusta tamanho dos cards abaixo */
+
     .card {
     width: 18rem;
 }
@@ -295,7 +292,7 @@ body {
     flex: 1;
     max-width: 18rem;
     width: 100%;
-    height: 100%; /* Garante que a altura seja respeitada */
+    height: 100%; 
     display: flex;
     flex-direction: column;
 }
@@ -308,17 +305,25 @@ body {
 .list-group {
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Faz a lista crescer dentro do card */
+    flex-grow: 1; 
 }
 
 .list-group-item {
-    flex-grow: 1; /* Faz com que cada botão ocupe um espaço proporcional */
+    flex-grow: 1; 
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 16px;
     width: 100%;
     box-sizing: border-box;
-    margin-bottom: 5px; /* Espaço entre os itens */
-    border: 1px solid #ddd; /* Opcional: melhora a separação visual */
+    margin-bottom: 5px; 
+    border: 1px solid #ddd; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+
+}
+.list-group-item:hover {
+    background-color: #C5CFE5;
+    color: #3C4858; 
 }

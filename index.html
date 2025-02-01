@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agulha Mágica</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -18,18 +16,18 @@
             </form>
             <ul class="nav nav-pills">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#"><i class="fa-solid fa-cart-shopping"></i>carrinho</a>
+                    <a class="nav-link active" href="#"><i class="fa-solid fa-cart-shopping"></i>Carrinho</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">registro</a>
+                    <a class="nav-link" href="#">Registro</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link" href="#">Login</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled" href="#"><i class="fa-solid fa-user"></i>Nome</a>
+                    <a class="nav-link disabled" href="#"><i class="fa-solid fa-user"></i>Nome</a>
                 </li>
-              </ul>
+            </ul>
         </div>
     </header>
 
@@ -38,51 +36,59 @@
             <img src="bgm/teste.png" alt="Logo" class="logo">
             <div class="row">
                 <div class="col-3">
-                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="fa-solid fa-house"></i>Home</a>
-                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fa-solid fa-user"></i>Perfil</a>
-                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fa-solid fa-envelope"></i>Mensagens</a>
-
-                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fa-solid fa-gear"></i>Config</a>
-                  </div>
+                    <div class="nav flex-column nav-pills">
+                        <a class="nav-link active" href="#"><i class="fa-solid fa-house"></i>Home</a>
+                        <a class="nav-link" href="#"><i class="fa-solid fa-user"></i>Perfil</a>
+                        <a class="nav-link" href="#"><i class="fa-solid fa-envelope"></i>Mensagens</a>
+                        <a class="nav-link" href="#"><i class="fa-solid fa-gear"></i>Config</a>
+                    </div>
                 </div>
-              </div>
+            </div>
         </div>
 
         <div class="container-direita">
-          <!-- Bootstrap 5 -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="bgm/conserto1.jpg" alt="Primeiro Slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="bgm/conserto2.jpg" alt="Segundo Slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="bgm/conserto3.jpg" alt="Terceiro Slide">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Próximo</span>
-          </button>
-        </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Card Destaque -->
+                <div class="card me-3" style="width: 18rem;">
+                    <div class="card-header">Serviços</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" id="item-1">Bainha</li>
+                        <li class="list-group-item" id="item-2">Ajustes</li>
+                        <li class="list-group-item" id="item-3">Cerzir & Remendo</li>
+                    </ul>
+                </div>
 
-          
+                <!-- Carrossel -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="bgm/conserto1.jpg" alt="Primeiro Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="bgm/conserto2.jpg" alt="Segundo Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="bgm/conserto3.jpg" alt="Terceiro Slide">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+            </div>
+
             <h1 class="texto-sim">Últimos Consertos</h1>
             <div class="container-conteudo">
-
-              
                 <div class="card-deck">
                     <div class="card">
                         <img class="card-img-top" src="bgm/conserto1.jpg" alt="Imagem de capa do card">
@@ -118,11 +124,8 @@
             </div>
         </div>
     </div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"   
-></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="index.js"></script>
+</body>
 </html>

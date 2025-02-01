@@ -241,3 +241,84 @@ body {
     background-color: #B6C7E3; /* Azul pastel */
     color: #FFFFFF;
 }
+/* Centraliza o conteúdo principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Container do Carousel + Card Destaque */
+.carousel-card-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Define tamanho do carousel */
+.carousel {
+    flex: 1;
+    max-width: 600px;
+}
+
+/* Ajuste para o card de destaque */
+.destaque-card {
+    width: 18rem;
+}
+
+/* Seção dos Cards abaixo */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Ajusta tamanho dos cards abaixo */
+    .card {
+    width: 18rem;
+}
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cards-container .card {
+    flex: 1;
+    max-width: 18rem;
+    width: 100%;
+    height: 100%; /* Garante que a altura seja respeitada */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    text-align: center;
+    font-size: 18px;
+}
+
+.list-group {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Faz a lista crescer dentro do card */
+}
+
+.list-group-item {
+    flex-grow: 1; /* Faz com que cada botão ocupe um espaço proporcional */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 5px; /* Espaço entre os itens */
+    border: 1px solid #ddd; /* Opcional: melhora a separação visual */
+}

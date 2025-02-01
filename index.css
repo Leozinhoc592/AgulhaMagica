@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+*:focus {
+    outline: none !important;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -11,6 +14,28 @@ body {
     min-height: 100vh;
     background-color: #F4F4F9; 
 }
+.container-topo {
+    display: flex;
+    justify-content: flex-end; /* Empurra tudo para a direita */
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+}
+
+#menuTopo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto; /* Garante que ele vá totalmente para a direita */
+}
+
+#menuTopo input[type="text"],
+#menuTopo button {
+    height: 30px;
+}
+
+
 
 
 .nav-pills {
@@ -29,11 +54,21 @@ body {
 
 /* Topo */
 .container-topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Z-index do header */
+    background-color: #DEE3F4;
+    padding: 8px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #DEE3F4; 
-    padding: 10px;
+    justify-content: flex-end;
+    
+}
+.main-container {
+    margin-top: 100px; /* Igual à altura da barra superior */
+    /* ou, se preferir: padding-top: 60px; */
 }
 
 .container-topo form {
@@ -56,7 +91,8 @@ body {
     left: 0;
     border-right: 2px solid #C5CFE5;
     overflow-y: auto;
-    
+    overflow-x: hidden;
+    z-index: 1100; /* Valor maior que o do header */
 }
 
 .container-direita {
@@ -83,6 +119,12 @@ body {
     z-index: 1; 
     margin-bottom: 20px; 
 }
+.carousel-item img {
+    width: 100%;
+    height: 400px; /* Defina um tamanho fixo adequado */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+}
+
 
 .cards-container {
     display: flex;
@@ -326,4 +368,24 @@ body {
 .list-group-item:hover {
     background-color: #C5CFE5;
     color: #3C4858; 
+}
+.nav-pills .nav-item {
+    margin: 0 10px; /* Aumente o valor para mais espaço */
+}
+.container-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.container-topo .nav {
+    max-width: 50%; /* Reduz a largura total da navegação */
+    flex-wrap: nowrap; /* Evita que os itens quebrem de linha */
+}
+
+.nav-item {
+    flex: 0;
+    white-space: nowrap;
 }

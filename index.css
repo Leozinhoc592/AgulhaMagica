@@ -12,22 +12,58 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #F4F4F9; 
+    background-color: #F4F4F9;
+    font-family: 'Dancing Script', cursive;
 }
+
 .container-topo {
     display: flex;
-    justify-content: flex-end; /* Empurra tudo para a direita */
+    justify-content: flex-end;
     align-items: center;
     padding: 10px;
     width: 100%;
     position: relative;
 }
 
+#botoes-esquerda{
+    margin-left: 10px;
+    font-size: 1.5rem;
+    color: #3C4858;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #C5CFE5;
+    color: #3C4858;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    
+}
+#menu-esquerda2{
+    gap: 60px;
+    flex-grow: 0.3;
+}
+
 #menuTopo {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-left: auto; /* Garante que ele vá totalmente para a direita */
+    gap: 130px;
+    flex-grow: 0.3;
+    margin-left: auto;
+    
 }
 
 #menuTopo input[type="text"],
@@ -37,9 +73,11 @@ body {
 
 
 
-
 .nav-pills {
     margin-left: 30px;
+}
+#nav-pillstopo{
+    margin-left: 50%;
 }
 
 .nav-pills .nav-link {
@@ -58,7 +96,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Z-index do header */
+    z-index: 1000;
     background-color: #DEE3F4;
     padding: 8px;
     display: flex;
@@ -67,8 +105,7 @@ body {
     
 }
 .main-container {
-    margin-top: 100px; /* Igual à altura da barra superior */
-    /* ou, se preferir: padding-top: 60px; */
+    margin-top: 100px;
 }
 
 .container-topo form {
@@ -92,7 +129,7 @@ body {
     border-right: 2px solid #C5CFE5;
     overflow-y: auto;
     overflow-x: hidden;
-    z-index: 1100; /* Valor maior que o do header */
+    z-index: 1100;
 }
 
 .container-direita {
@@ -121,8 +158,8 @@ body {
 }
 .carousel-item img {
     width: 100%;
-    height: 400px; /* Defina um tamanho fixo adequado */
-    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+    height: 400px;
+    object-fit: cover; 
 }
 
 
@@ -254,6 +291,7 @@ body {
     padding-right: 134px;
     padding-left: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 
@@ -370,7 +408,7 @@ body {
     color: #3C4858; 
 }
 .nav-pills .nav-item {
-    margin: 0 10px; /* Aumente o valor para mais espaço */
+    margin: 0 10px;
 }
 .container-topo {
     display: flex;
@@ -381,8 +419,8 @@ body {
 }
 
 .container-topo .nav {
-    max-width: 50%; /* Reduz a largura total da navegação */
-    flex-wrap: nowrap; /* Evita que os itens quebrem de linha */
+    max-width: 50%; 
+    flex-wrap: nowrap;
 }
 
 .nav-item {

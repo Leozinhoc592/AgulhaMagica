@@ -98,9 +98,92 @@ body {
 .nav-pills {
     margin-left: 30px;
 }
-#nav-pillstopo{
-    margin-left: 50%;
+#nav-pillstopo {
+    position: relative;
+    left: 80%;
+    transform: translateX(-50%);
 }
+
+@media (max-width: 1800px) {
+    #nav-pillstopo {
+        left: 75%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 1700px) {
+    #nav-pillstopo {
+        left: 65%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 1650px) {
+    #nav-pillstopo {
+        left: 40%;  /* Menor deslocamento, mas ainda centralizado */
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 1500px) {
+    #nav-pillstopo {
+        left: 30%;  /* Centralização definitiva */
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 1400px) {
+    #nav-pillstopo {
+        left: 25%;  /* Começa a ir para a direita de forma mais drástica */
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 1330px) {
+    #nav-pillstopo {
+        left: 20%;  /* O menu vai indo mais para a direita */
+        transform: translateX(-50%);
+
+    }
+}
+
+@media (max-width: 1200px) {
+    #nav-pillstopo {
+        left: 25%;  /* Ajuste para telas menores */
+        transform: translateX(-50%);
+        flex-direction: column
+    }
+}
+
+@media (max-width: 1100px) {
+    #nav-pillstopo {
+        left: 24%;  /* Ajuste mais agressivo para telas muito pequenas */
+        transform: translateX(-50%);
+        flex-direction: column
+        
+    }
+}
+
+@media (max-width: 1000px) {
+    #nav-pillstopo {
+        left: 20%;  /* Vai para a direita rapidamente */
+        transform: translateX(-50%);
+        flex-direction: column
+    }
+}
+
+@media (max-width: 900px) {
+    #nav-pillstopo {
+        left: 20%;  /* Finaliza o movimento */
+        transform: translateX(-50%);
+        flex-direction: column
+    }
+}
+
+
+
+
+
 
 .nav-pills .nav-link {
     padding-left: 10px; 
@@ -447,7 +530,7 @@ body {
 }
 
 #teste2 {
-    position: fixed; /* Fixa o elemento na tela */
+
     top: 50%; /* Centraliza verticalmente */
     left: 50%; /* Centraliza horizontalmente */
     transform: translate(-50%, -50%); /* Ajusta a posição para realmente centralizar */
@@ -469,7 +552,6 @@ body {
 }
 
 .teste3 {
-    position: fixed;
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);

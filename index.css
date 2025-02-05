@@ -106,81 +106,69 @@ body {
 
 @media (max-width: 1800px) {
     #nav-pillstopo {
-        left: 75%;
+        left: 70%;
         transform: translateX(-50%);
     }
 }
 
 @media (max-width: 1700px) {
     #nav-pillstopo {
-        left: 65%;
+        left: 60%;
         transform: translateX(-50%);
     }
 }
 
-@media (max-width: 1650px) {
+@media (max-width: 1600px) {
     #nav-pillstopo {
-        left: 40%;  /* Menor deslocamento, mas ainda centralizado */
+        left: 50%;
         transform: translateX(-50%);
     }
 }
 
 @media (max-width: 1500px) {
     #nav-pillstopo {
-        left: 30%;  /* Centralização definitiva */
+        left: 40%;
         transform: translateX(-50%);
     }
 }
 
 @media (max-width: 1400px) {
     #nav-pillstopo {
-        left: 25%;  /* Começa a ir para a direita de forma mais drástica */
+        left: 25%;
         transform: translateX(-50%);
     }
 }
 
-@media (max-width: 1330px) {
+/* Alteração começa um pouco antes (1300px) */
+@media (max-width: 1300px) {
     #nav-pillstopo {
-        left: 20%;  /* O menu vai indo mais para a direita */
-        transform: translateX(-50%);
+        position: relative;
+        left: 0;
+        transform: none;
+        width: 100%;
+        margin-top: 80px; /* Move o menu para baixo */
+        z-index: 10; /* Garante que fique sobre o conteúdo */
+    }
 
+    .nav-pills {
+        flex-direction: column; /* Alinha os itens verticalmente */
+        text-align: center;
+        display: flex;
     }
 }
 
-@media (max-width: 1200px) {
-    #nav-pillstopo {
-        left: 25%;  /* Ajuste para telas menores */
-        transform: translateX(-50%);
-        flex-direction: column
-    }
-}
-
+/* Ajustes para telas menores */
 @media (max-width: 1100px) {
     #nav-pillstopo {
-        left: 24%;  /* Ajuste mais agressivo para telas muito pequenas */
-        transform: translateX(-50%);
-        flex-direction: column
-        
-    }
-}
-
-@media (max-width: 1000px) {
-    #nav-pillstopo {
-        left: 20%;  /* Vai para a direita rapidamente */
-        transform: translateX(-50%);
-        flex-direction: column
+        margin-top: 100px; /* Mais espaço conforme a tela diminui */
     }
 }
 
 @media (max-width: 900px) {
     #nav-pillstopo {
-        left: 20%;  /* Finaliza o movimento */
-        transform: translateX(-50%);
-        flex-direction: column
+        margin-top: 120px; /* Continua ajustando */
     }
 }
-
-
 
 
 
@@ -629,3 +617,41 @@ body {
     background-color: #B6C7E3;
     color: #FFFFFF;
 }
+
+
+/* Brecho */
+
+.container-direita2 {
+    display: flex;
+    flex-wrap: wrap;  /* Permite que as fileiras quebrem para a linha seguinte */
+    gap: 20px; /* Espaçamento entre as fileiras */
+    justify-content: flex-start; /* Alinha as fileiras à esquerda por padrão */
+    padding-left: 14%; /* Adiciona um deslocamento para a esquerda (você pode ajustar esse valor) */
+    padding-top: 8%;
+    width: 100%; /* Garante que ocupe toda a largura disponível */
+    box-sizing: border-box; /* Garante que padding seja incluído no cálculo da largura total */
+  }
+  
+  .Fileira {
+    display: flex;
+    gap: 10px; /* Espaço entre os cards */
+    width: 100%; /* Garante que a fileira ocupe toda a largura do contêiner */
+  }
+  
+  .card {
+    flex: 1 0 30%; /* Cada card ocupa 30% da largura da fileira, com 3 cards por linha */
+    max-width: 18rem; /* Define o tamanho máximo para os cards */
+  }
+  .card-img-top{
+    max-width: 100%;   /* Limita a largura da imagem para o tamanho da caixa */
+    max-height: 180px; /* Limita a altura da imagem para o tamanho da caixa */
+    width: auto;       /* Mantém a proporção da imagem */
+    height: auto;      /* Mantém a proporção da imagem */
+    object-fit: contain; 
+  }
+
+  .card-title{
+    text-align: center;
+  }
+  
+  

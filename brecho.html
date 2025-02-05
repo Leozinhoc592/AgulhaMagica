@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="teste3">
+            <div class="btn-group teste2">
+              <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Linhas
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="https://s.shopee.com.br/2fvyOhebym">kit 30 carretéis de linhas coloridas</a>
+                <a class="dropdown-item" href="https://s.shopee.com.br/1qMrPO8ZH4">Lã mollet círculo 100GR 200M</a>
+                <a class="dropdown-item" href="https://s.shopee.com.br/8zq1wdS49r">Linha para Costura Reta 100% Poliéster</a>
+              </div>
+            </div>
+          
+            <div class="btn-group teste2">
+              <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Tesouras
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="https://s.shopee.com.br/10nkOpnYSE">Kit 3 Tesouras</a>
+                <a class="dropdown-item" href="https://s.shopee.com.br/1g3RCEqbuP">Tesoura Multiuso 25cm</a>
+                <a class="dropdown-item" href="https://s.shopee.com.br/3AsEz2iRzr">Tesoura Alfaiate</a>
+              </div>
+            </div>
+          
+            <div class="btn-group teste2">
+              <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Agulhas 
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="https://s.shopee.com.br/8UtlLqHwFY">Agulha de Mão Cartela com 100 Unidades N.8</a>
+                <a class="dropdown-item" href="https://s.shopee.com.br/AKLPXByAEA">55 Agulhas De Costurar Mão</a>
+                <a class="dropdown-item" href="https://s.shopee.com.br/2AzhoF5di0">Agulhas de Costura Multi-Tamanho com Abertura Lateral</a>
+                <a class="dropdown-item" href="https://s.shopee.com.br/8AGuxL6LKP">Conjunto De Agulhas Crochê Com Cabo De Borracha</a>
+              </div>
+            </div>
+        </div>
+
+        <div class="container-topo d-flex justify-content-start align-items-center">
+            <div id="menuTopo">
+                <ul class="nav nav-pills" id="nav-pillstopo">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i>Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="brecho.html">Brecho</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fa-solid fa-user"></i>Faça seu orçamento</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="container-esquerda">
+            <img src="bgm/teste.png" alt="Logo" class="logo">
+            <div class="row">
+                <div class="col-3">
+                    <div class="nav flex-column nav-pills" id="menu-esquerda2">
+                        <a class="nav-link active" href="index.html" id="botoes-esquerda"><i class="fa-solid fa-house"></i>Home</a>
+                        <a class="nav-link" href="#"><i class="fa-solid fa-user"></i>Contatos</a>
+                        <a class="nav-link" href="https://wa.me/5521977446794?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!" target="_blank">
+                            <i class="fa-solid fa-envelope"></i> Dúvidas
+                        </a>
+                        <a class="nav-link" href="https://www.google.com/maps?q=-22.939417631555,-43.06221259143626" target="_blank">
+                            <i class="fa-solid fa-map-marker-alt"></i> Localização
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="container-direita2">
+                <div class="Fileira">
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="/bgm/Brecho01.jpg"  alt="/bgm/Item-fora-de-estoque">
+                    <div class="card-body">
+                      <h5 class="card-title">Roupa</h5>
+                      <p class="card-text">Tamanho:x <br>preço: 0,0 R$. <br>Estoque: 0</p>
+                      <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 1')">Adicionar ao carrinho</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="/bgm/Brecho02.jpg" onerror="this.onerror=null; this.src='/bgm/fs.jpg';">
+                    <div class="card-body">
+                      <h5 class="card-title">Roupa</h5>
+                      <p class="card-text">Tamanho:x <br>preço: 0,0 R$. <br>Estoque: 0</p>
+                      <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 2')">Adicionar ao carrinho</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="/bgm/Brecho03.jpg" onerror="this.onerror=null; this.src='/bgm/fs.jpg';">
+                    <div class="card-body">
+                      <h5 class="card-title">Roupa</h5>
+                      <p class="card-text">Tamanho:x <br>preço: 0,0 R$. <br>Estoque: 0</p>
+                      <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 3')">Adicionar ao carrinho</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="/bgm/Brecho04.jpg" onerror="this.onerror=null; this.src='/bgm/fs.jpg';" >
+                    <div class="card-body">
+                      <h5 class="card-title">Roupa</h5>
+                      <p class="card-text">Tamanho:x <br>preço: 0,0 R$. <br>Estoque: 0</p>
+                      <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 4')">Adicionar ao carrinho</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="/bgm/Brecho05.jpg" onerror="this.onerror=null; this.src='/bgm/fs.jpg';" >
+                    <div class="card-body">
+                      <h5 class="card-title">Roupa</h5>
+                      <p class="card-text">Tamanho:x <br>preço: 0,0 R$. <br>Estoque: 0</p>
+                      <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 5')">Adicionar ao carrinho</a>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="Fileira">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/bgm/Brecho06.jpg" onerror="this.onerror=null; this.src='/bgm/fs.jpg';" >
+                        <div class="card-body">
+                          <h5 class="card-title">Roupa</h5>
+                          <p class="card-text">Tamanho:x <br>preço: 0,0 R$. <br>Estoque: 0</p>
+                          <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 6')">Adicionar ao carrinho</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/bgm/Brecho07.jpg" onerror="this.onerror=null; this.src='/bgm/fs.jpg';" >
+                        <div class="card-body">
+                          <h5 class="card-title">Roupa</h5>
+                          <p class="card-text">Tamanho:x <br>preço: 0,0 R$. <br>Estoque: 0</p>
+                          <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 7')">Adicionar ao carrinho</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/bgm/Brecho08.jpg" onerror="this.onerror=null; this.src='/bgm/fs.jpg';" >
+                        <div class="card-body">
+                          <h5 class="card-title">Roupa</h5>
+                          <p class="card-text">Tamanho:x <br>preço: 0,0 R$. <br>Estoque: 0</p>
+                          <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 8')">Adicionar ao carrinho</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/bgm/Brecho09.jpg" onerror="this.onerror=null; this.src='/bgm/fs.jpg';" >
+                        <div class="card-body">
+                          <h5 class="card-title">Roupa</h5>
+                          <p class="card-text">Tamanho:x <br>preço: 0,0 R$. <br>Estoque: 0</p>
+                          <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 9')">Adicionar ao carrinho</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/bgm/Brecho10.jpg" onerror="this.onerror=null; this.src='/bgm/fs.jpg';" >
+                        <div class="card-body">
+                          <h5 class="card-title">Roupa</h5>
+                          <p class="card-text">Tamanho:x <br>preço: 0,0 R$. <br>Estoque: 0</p>
+                          <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 10')">Adicionar ao carrinho</a>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="Fileira">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/bgm/Brecho11.jpg" onerror="this.onerror=null; this.src='/bgm/fs.jpg';" >
+                        <div class="card-body">
+                          <h5 class="card-title">Roupa</h5>
+                          <p class="card-text">Tamanho:x <br>preço: 0,0 R$. <br>Estoque: 0</p>
+                          <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 11')">Adicionar ao carrinho</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/bgm/Brecho12.jpg" onerror="this.onerror=null; this.src='/bgm/fs.jpg';" >
+                        <div class="card-body">
+                          <h5 class="card-title">Roupa</h5>
+                          <p class="card-text">Tamanho:x <br>preço: 0,0 R$. <br>Estoque: 0</p>
+                          <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 12')">Adicionar ao carrinho</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/bgm/Brecho13.jpg" onerror="this.onerror=null; this.src='/bgm/fs.jpg';" >
+                        <div class="card-body">
+                          <h5 class="card-title">Roupa</h5>
+                          <p class="card-text">Tamanho:x <br>preço: 0,0 R$. <br>Estoque: 0</p>
+                          <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 13')">Adicionar ao carrinho</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/bgm/Brecho14.jpg" onerror="this.onerror=null; this.src='/bgm/fs.jpg';" >
+                        <div class="card-body">
+                          <h5 class="card-title">Roupa</h5>
+                          <p class="card-text">Tamanho:x <br>preço: 0,0 R$. <br>Estoque: 0</p>
+                          <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 14')">Adicionar ao carrinho</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/bgm/Brecho15.jpg" onerror="this.onerror=null; this.src='/bgm/fs.jpg';" >
+                        <div class="card-body">
+                          <h5 class="card-title">Roupa</h5>
+                          <p class="card-text">Tamanho:x <br>preço: 0,0 R$. <br>Estoque: 0</p>
+                          <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 15')">Adicionar ao carrinho</a>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="Fileira">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/bgm/Brecho16.jpg" onerror="this.onerror=null; this.src='/bgm/fs.jpg';" >
+                        <div class="card-body">
+                          <h5 class="card-title">Roupa</h5>
+                          <p class="card-text">Tamanho:x <br>preço: 0,0 R$. <br>Estoque: 0</p>
+                          <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 16')">Adicionar ao carrinho</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/bgm/Brecho17.jpg" onerror="this.onerror=null; this.src='/bgm/fs.jpg';" >
+                        <div class="card-body">
+                          <h5 class="card-title">Roupa</h5>
+                          <p class="card-text">Tamanho:x <br>preço: 0,0 R$. <br>Estoque: 0</p>
+                          <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 17')">Adicionar ao carrinho</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/bgm/Brecho18.jpg" onerror="this.onerror=null; this.src='/bgm/fs.jpg';" >
+                        <div class="card-body">
+                          <h5 class="card-title">Roupa</h5>
+                          <p class="card-text">Tamanho:x <br>preço: 0,0 R$. <br>Estoque: 0</p>
+                          <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 18')">Adicionar ao carrinho</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/bgm/Brecho19.jpg" onerror="this.onerror=null; this.src='/bgm/fs.jpg';"  >
+                        <div class="card-body">
+                          <h5 class="card-title">Roupa</h5>
+                          <p class="card-text">Tamanho:x <br>preço: 0,0 R$. <br>Estoque: 0</p>
+                          <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 19')">Adicionar ao carrinho</a>
+                        </div>
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/bgm/Brecho20.jpg" onerror="this.onerror=null; this.src='/bgm/fs.jpg';" >
+                        <div class="card-body">
+                          <h5 class="card-title">Roupa</h5>
+                          <p class="card-text">Tamanho:x <br>preço: 0,0 R$. <br>Estoque: 0</p>
+                          <a href="#" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 20')">Adicionar ao carrinho</a>
+                        </div>
+                      </div>
+                  </div>
+                    
+                    
+                  </div>
+                  
+                  
+              
+</body>
+</html>
